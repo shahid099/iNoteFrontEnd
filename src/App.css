@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ============= Navbar Styles ================ */
+.nav {
+  max-width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(234, 232, 232);
+  box-shadow: 4px 4px 10px #999;
+  padding: 0px 50px;
+  margin: 1em 1em;
+  border-radius: 5px;
+}
+.navleft h1 {
+  opacity: 5;
+  cursor: pointer;
+}
+.navRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+/* ============= Navbar Styles End ================ */
+
+/* ============= Signup & Login Css ================ */
+.signup {
+  border: 1px solid #111;
+  padding: 3px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em;
+  cursor: pointer;
+}
+.login {
+  cursor: pointer;
+}
+.arrowImg {
+  transform: rotate(-35deg);
+}
+
+/* ============= Signup & Login Css End ================ */
+
+/* ============= Main Component Css ================ */
+.mainFooter {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(199, 247, 247);
+  flex-direction: column;
+}
+.colorBox {
+  width: 100%;
+  height: 25px;
+  background: #fff;
+}
+
+/* == Notes Css == */
+.wrapper {
+  background: #88ABFF;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, 312px);
+  padding: 25px;
+}
+.wrapper li {
+  height: 250px;
+  list-style: none;
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px 20px 20px;
+}
+
+/* == Add Note Css == */
+.add-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.icon {
+  width: 78px;
+  height: 78px;
+  border: 2px dotted #88ABFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.icon:hover {
+  border: 3px dotted #6591f8;
+  font-size: 30px;
+}
+.note {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.note p {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.bottom-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 2px;
+}
+
+/* == Modale for Adding Data Css == */
+.takeDataBox {
+  width: 350px;
+  height: 370px;
+  background: #fff;
+  border: 2px dashed #88ABFF;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  display: none;
+}
+.titleBox, .descBox, .tagBox {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+#title, #description, #tag {
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #999;
+  font-size: 18px;
+}
+#description {
+  width: 100%;
+  height: 140px;
+}
+.hide-seek {
+  display: block;
+}
+.addDiscardBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.addDiscardBox button {
+  width: 70px;
+  padding: 5px 3px;
+  border-radius: 7px;
+  border: 1px solid #999;
+}
+.setting {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delete {
+  cursor: pointer;
+}
+.edit {
+  cursor: pointer;
+}
+
+/* CSS FOR UPDATE THE MODULE */
+.updateDataBox {
+  width: 350px;
+  height: 370px;
+  background: #fff;
+  border: 2px dashed #88ABFF;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  display: none;
+}
+.update-seek {
+  display: block;
+}
+#etitle, #edescription, #etag {
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #999;
+  font-size: 18px;
+}
+#description {
+  width: 100%;
+  height: 140px;
+}
+
+
+/* ============= Main Component End ================ */
+
+/* ============= Signup Component CSS Start ================ */
+.signupBox {
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #6591f8, #21e4eb);
+}
+.SignUpForm {
+  width: 40%;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em 3em;
+}
+.SignUpForm div {
+  display: flex;
+  flex-direction: column;
+}
+.SignUpForm div input {
+  padding: .4em .5em;
+  border-radius: .3em;
+  border: none;
+  outline: none;
+  font-size: medium;
+}
+.buttonSubmit {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonSubmit button{ 
+  padding: .4em 1em;
+  outline: none;
+  border: none;
+  font-size: medium;
+  border-radius: .3em;
+}
+
+/* ============= Signup Component CSS Start ================ */
